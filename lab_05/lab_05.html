@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>T-Shirt Order Form</title>
+        <style>
+            #header {
+                height: 500px;
+			    text-align: center;
+			    line-height: 500px;
+			    background-image: url("img/header.jpg");
+			    background-size: cover;
+			    background-position: center;
+			    color: #fff;
+			    text-shadow: 0px 0px 10px #000;
+            }
+            .form-row {
+                margin: 10px 0px;
+                display: flex;
+            }
+            .left-col{
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+
+            <div id="header">
+                <h1>USC Spirit T-Shirt Order Form</h1>
+            </div>
+            <!-- header -->
+        <form action="confirmation.html">    
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="name-id">First Name:</label>
+                </div>
+                <input type="text" id="name-id" placeholder="Tommy">
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="name-id">Last Name:</label>
+                </div>
+                <input type="text" id="name-id" placeholder="Trojan">
+            </div>
+
+            <div class="form-row">
+
+				<div class="left-col">
+					<label for="email-id">Email:</label>
+				</div>
+
+				<input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+			</div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="name-id">Phone:</label>
+                </div>
+                <input type="text" id="name-id" placeholder="(000) 000-0000">
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    Sleeve Length:
+                </div>
+                <label>
+                    <input type="radio" name="sleeve">
+                    Sleeveless
+                </label>
+                <label>
+                    <input type="radio" name="sleeve">
+                    Short
+                </label>
+                <label>
+                    <input type="radio" name="sleeve">
+                    Long
+                </label>
+                <label>
+                    <input type="radio" name="sleeve">
+                    Sweatshirt
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    Size:
+                </div>
+                <select>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    Print:
+                </div>
+                <label>
+                    <input type="checkbox">
+                    Tommy Trojan
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Fight On
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Beat the ___ (Choose Opposing Team)
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    Beat The ___: (only if selected in Print)
+                </div>
+                <select>
+                    <option>Bruins</option>
+                    <option>Sun Devils</option>
+                    <option>Buffalo</option>
+                    <option>Wildcats</option>
+                    <option>Bears</option>
+                    <option>Fighting Irish</option>
+                    <option>Utes</option>
+                    <option>Huskies</option>
+                    <option>Ducks</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="msg-id">Comment:</label>
+                </div>
+                <textarea id="msg-id" placeholder="Any Additional Instructions"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                
+                </div>
+                <label>
+                    <input type="checkbox">
+                    I accept the Terms & Conditions
+                </label>
+            </div>    
+
+            <div class="form-row">
+                <button type="submit">Place Order</button>
+                <button type="reset">Clear</button>
+            </div>
+
+            <div id="footer">
+                <p>For questions, email <a href="mailto:shanemil@usc.edu">shanemil@usc.edu</a>.</p>
+            </div> 
+        </form> 
+     <!-- form -->
+    </body>
+
+</html>
