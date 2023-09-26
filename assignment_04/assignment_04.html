@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>November 2023 Calendar</title>
+        <style>
+            #main {
+                width: 900px;
+                background-color: #fff;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1 { 
+                margin: 0px;
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+                text-shadow: 0px 0px 10px #000;
+                background-color: #000;
+                border-radius: 15px;
+                
+            }
+            #header {
+                background-image: url('img/fall.jpg');
+                background-size: cover;
+                background-position: center;
+                color: #FFF;
+                font-size: 1.5em;
+                text-align: center;
+                text-shadow: 0px 0px 10px #000;
+                height: 300px;
+                line-height: 300px;
+		    }
+            body {
+                background-color: lightgray;
+            }
+            table {
+                border-collapse:collapse;
+            }
+            th {
+			border: 1px solid #000;
+			border-bottom: 3px solid #000;
+			text-align: center;
+            }
+            td {
+			border: 1px solid #000;
+            text-align: right;
+            vertical-align: 0px;
+			width: 127.43px;
+            height: 90px;
+            }
+            /* width of #main = 900px
+				# of cells = 7
+				width of borders = 1px * 8 = 8px
+
+				900px - 8px = 892px for 7 cells left
+				892px / 7 = 127.43px per cell */
+            #veterans {
+                background-image: url('img/veterans.jpg');
+                background-size: cover;
+                background-position: center;
+                color:#FFF;
+                text-shadow: 0px 0px 10px #000;
+            }
+            #birthday {
+                background-image: url('img/birthday.jpg');
+                background-size: cover;
+                background-position: center;
+                color:#FFF;
+                text-shadow: 0px 0px 10px #000;
+            }
+            #thanksgiving {
+                background-image: url('img/thanksgiving.jpg');
+                background-size: cover;
+                background-position: center;
+                color:#FFF;
+                text-shadow: 0px 0px 10px #000;
+            }
+            .notnov {
+                color: grey;
+            }
+        
+
+        </style>
+
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <h1>November 2023</h1>
+            </div>  
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+
+                <tr>
+                    <td class="notnov">29</td>
+                    <td class="notnov">30</td>
+                    <td class="notnov">31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td >5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td id="veterans">10
+                        <h3> Veterans Day</h3>
+                    </td>
+                    <td>11</td>
+                </tr>
+
+                <tr>
+                    <td id="birthday">12
+                        <h3>Shane's Birthday</h3>
+                    </td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td id="thanksgiving">23
+                        <h3>Thanksgiving</h3>
+                    </td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td class="notnov">1</td>
+                    <td class="notnov">2</td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>
