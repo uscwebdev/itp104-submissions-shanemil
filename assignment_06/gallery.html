@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fantasy Football</title>
+
+        <link rel="stylesheet" href="center.css">
+
+        <style>
+            #header {
+                background-color: aqua;
+			    height: 300px;
+			    text-align: center;
+			    line-height: 370px;
+			    background-image: url("img/gallery.jpg");
+            }
+
+            .gallery {
+                width: 1020px;
+                height: auto;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            #navbar a:hover, #navbar #highlight-gal {
+                color: aqua;
+                border-bottom: 2px solid grey;
+            }
+            .defense {
+                width: 470px;
+                height: 100px;
+                margin: 10px;
+                border: 1px solid #000;
+			    overflow: hidden;
+			    position: relative;
+            }
+            .QB {
+                width: 225px;
+                height: 100px;
+                margin: 10px;
+                border: 1px solid #000;
+                overflow: hidden;
+			    position: relative;
+            }
+            .RB {
+                width: 225px;
+                height: 100px;
+                margin: 10px;
+                border: 1px solid #000;
+                overflow: hidden;
+			    position: relative;
+            }
+            .WR {
+                width: 225px;
+                height: 100px;
+                margin: 10px;
+                border: 1px solid #000;
+                overflow: hidden;
+			    position: relative;
+            }
+            .TE {
+                width: 470px;
+                height: 200px;
+                margin: 10px;
+                border: 1px solid #000;
+                overflow: hidden;
+			    position: relative;
+            }
+            .K {
+                width: 470px;
+                height: 200px;
+                margin: 10px;
+                border: 1px solid #000;
+                overflow: hidden;
+			    position: relative;
+            }
+            .overlay {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+                text-align: center;
+                padding-top: 20%;
+                visibility: hidden;
+                font-size: 1.2em;
+            }
+            .writing {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+                text-align: center;
+                padding-top: 50px;
+                visibility: hidden;
+                font-size: 1.2em;
+            }
+            #navbar {
+                background-color: grey;
+                top: 325px;
+                left: 0px;
+                right: 0px;
+                z-index: 1;
+            }
+            #sub-menu{
+                top:50px;
+                left: 180px;
+                background-color:grey;
+                z-index: 1;
+            }
+
+            .defense:hover > .writing {
+                visibility: visible;
+            }
+            .defense > img {
+                height: 100%;
+                width: auto;
+
+            }
+            .defense > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+
+            .QB:hover > .overlay {
+                visibility: visible;
+            }
+            .QB > img {
+                height: 100%;
+                width: auto;
+
+            }
+            .QB > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+
+            .RB:hover > .overlay {
+                visibility: visible;
+            }
+            .RB > img {
+                height: 100%;
+                width: auto;
+
+            }
+            .RB > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+
+            .WR:hover > .overlay {
+                visibility: visible;
+            }
+            .WR > img {
+                height: 100%;
+                width: auto;
+
+            }
+            .WR > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+
+            .TE:hover > .overlay {
+                visibility: visible;
+            }
+            .TE > img {
+                height: 100%;
+                width: auto;
+            }
+            .TE > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+
+            .K:hover > .overlay {
+                visibility: visible;
+            }
+            .K > img {
+                height: 100%;
+                width: auto;
+
+            }
+            .K > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1> Gallery</h1>
+        </div>
+        <!-- header -->
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a id="highlight-nav" href="assignment_06.html#season">Home</a>
+                    <ul id="sub-menu">
+                        <li><a href="assignment_06.html#season">Season Maintenance</a></li>
+                        <li><a href="assignment_06.html#trade">Trades</a></li>
+                        <li><a href="assignment_06.html#prplay">Weekly Prize Players</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <h2 id="season"> Waiver Claims by Position </h2>
+            <div class="gallery">
+                <div class="defense">
+                    <img class="width-100" src="img/dolphins.jpg" alt="Dolphins">
+                    <div class="writing"> Defense: Dolphins</div>
+                </div>
+                <div class="QB">
+                    <img class="width-100" src="img/cj.jpg" alt="CJ">
+                    <div class="overlay">QB: CJ Stroud</div>
+                </div>
+                <div class="QB">
+                    <img class="width-100" src="img/purdy.jpg" alt="purdy">
+                    <div class="overlay">QB: Brock Purdy</div>
+                </div>
+                <div class="RB">
+                    <img class="width-100" src="img/kyren.jpg" alt="kyren">
+                    <div class="overlay">RB: Kyren Williams</div>
+                </div>
+                <div class="RB">
+                    <img class="width-100" src="img/singletary.jpg" alt="singletary">
+                    <div class="overlay">RB: Devin Singletary</div>
+                </div>
+                <div class="WR">
+                    <img class="width-100" src="img/tutu.jpg" alt="tutu">
+                    <div class="overlay">WR: Tutu Atwell</div>
+                </div>
+                <div class="WR">
+                    <img class="width-100" src="img/palmer.jpg" alt="palmer">
+                    <div class="overlay">WR: Josh Palmer</div>
+                </div>
+                <div class="RB">
+                    <img class="width-100" src="img/dillon.jpg" alt="dillon">
+                    <div class="overlay">RB: AJ Dillon</div>
+                </div>
+                <div class="RB">
+                    <img class="width-100" src="img/jaleel.jpg" alt="jaleel">
+                    <div class="overlay">RB: Jaleel McLaughlin</div>
+                </div>
+                <div class="WR">
+                    <img class="width-100" src="img/reynolds.jpg" alt="reynolds">
+                    <div class="overlay">WR: Josh Reynolds</div>
+                </div>
+                <div class="WR">
+                    <img class="width-100" src="img/rashee.jpg" alt="rashee">
+                    <div class="overlay">WR: Rashee Rice</div>
+                </div>
+                <div class="TE">
+                    <img class="width-100" src="img/logan.jpg" alt="logan">
+                    <div class="overlay">TE: Logan Thomas</div>
+                </div>
+                <div class="K">
+                    <img class="width-100" src="img/riley.jpg" alt="riley">
+                    <div class="overlay">Kicker: Riley Patterson</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"> 
+			University of Southern California &copy; 2023
+        </div>
+        <!-- Footer -->
+    </body>
+</html>
