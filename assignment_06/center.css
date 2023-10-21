@@ -56,18 +56,6 @@ body { background-color: grey;}
 #navbar li:hover > ul {
     display: block;
 }
-.overlay {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #FFF;
-    text-align: center;
-    padding-top: 20%;
-    visibility: hidden;
-}
 
 #footer {
     color: #fff;
