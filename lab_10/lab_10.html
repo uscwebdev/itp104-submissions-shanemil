@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 10: USC Football</title>
+        <style>
+            @font-face {
+                src:url('fonts/Special-Elite.ttf');
+                font-family:"Special-Elite";
+            }
+            #header{
+                font-family: "Special-Elite", fantasy;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                line-height: 300px;
+                font-size: 2em;
+                background-color:rgb(147, 4, 4);
+                color: yellow;
+                height: 300px;
+                width: auto;
+                text-shadow: 5px 5px 10px #000;
+                border-radius: 15px;
+                margin-bottom: 100px;
+            }
+            body{
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 200px;
+                background-color:yellow;
+                
+            }
+            img{
+                max-width: 100%;
+                height: 200px;
+                background-color: yellow;
+            }
+            .parent{
+                position: relative;
+                margin-left: 150px;
+
+            }
+            .img1 {
+                position: absolute;
+            }
+            .img2 {
+                position: absolute;
+                rotate: 5deg;
+
+            }
+            .img3{
+                position: absolute;
+                rotate: 10deg;
+            }
+
+            #transform{
+                margin-bottom: 300px;
+            }
+
+            #transform:hover .img1{
+                transition: all 1s;
+                transform: scale(1.1) rotate(-15deg) translateX(-25px);
+            }
+            #transform:hover .img2{
+                transition: all 1s;
+                transform: scale(1.1) rotate(0deg) translateX(100px);
+            }
+            #transform:hover .img3{
+                transition: all 1s;
+                transform: scale(1.1) rotate(15deg) translateX(200px);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>USC Football Pictures</h1>
+        </div>
+        <div id="transform" class="parent">
+            <div class="container">
+                <img class="img1" src="img/tunnel.jpg" alt="Tunnel">
+            </div>
+            <div class="container">
+                <img class="img2" src="img/coli.jpg" alt="Coli">
+            </div>
+            <div class="container">
+                <img class="img3" src="img/caleb.jpg" alt="Caleb">
+            </div>
+        </div>    
+        
+    </body>
+</html>
