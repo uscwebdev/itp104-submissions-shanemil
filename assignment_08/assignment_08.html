@@ -4,8 +4,17 @@
         <title>Shane's Cooking Corner</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Shane's Cooking Page is designed to give the tools for easy and healthy meals for people on the go or college students just like myself. Perfect for kitchen enthusiasts or if you're trying to make a quick snack.">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&family=Dancing+Script&family=Playpen+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
 
         <style>
+            @font-face {
+                src:url('fonts/PlaypenSans.ttf');
+                font-family:"PlaypenSans";
+                src:url('fonts/Aclonica.ttf');
+                font-family: "Aclonica";
+            }
+            
 
             body{
                 width: 1000px;
@@ -14,7 +23,11 @@
                 padding: 10px;
                 margin-left: auto;
                 margin-right: auto;
+                color: #5b4b57;
 
+            }
+            p li {
+                font-family: "PlaypenSans", sans-serif;
             }
             hr {
                 margin-top: auto;
@@ -22,7 +35,10 @@
                 background-color: yellow;
             }
             h2{
-                margin: 20px;
+                font-family: "PlaypenSans", sans-serif;
+            }
+            h3{
+                font-family: "Aclonica", fantasy;
             }
 
             #header{
@@ -37,6 +53,8 @@
                 text-shadow: 5px 5px 10px #7e7e7e;
                 background-image: url(img/title.jpg);
                 background-size: cover;
+                font-family: "Courgette", fantasy;
+                font-size: 1.8em;
             }
             /* Header */
             /* Start navbar */
@@ -47,11 +65,11 @@
                 line-height: 50px;
                 text-align: center;
                 display: block;
-                color: #000;
-                border-bottom: 2px solid #000;
+                color: #5b4b57;
+                border-bottom: 2px solid rgb(255, 95, 95);
             }
             #navbar {
-                background-color:#7e7e7e;
+                background-color: rgb(241, 231, 118);
                 top:300px;
                 left: 0px;
                 right: 0px;
@@ -87,12 +105,14 @@
             }
             #navbar a:hover, #navbar #highlight-nav {
                 color: rgb(255, 95, 95);
-                border-bottom: 1px solid #000;
-                color: #000;
+                border-bottom: 1px solid rgb(255, 95, 95);
+                color: #5b4b57;
             }
             #sub-menu {
                 top: 50px;
-                background-color: grey;
+                border: 1px solid rgb(241, 231, 118);
+                background-color: rgb(241, 231, 118);
+                color: #5b4b57;
             }
 /* navbar */
 /* Homepage Content */
@@ -127,24 +147,20 @@
             }
 
             /* comments section */
-            .form-row {
+            .form-sub {
+                display: flex;
+                margin: 20px 5px;
 
             }
             .left-col {
                 width: 400px;
             }
+            textarea {
+                width: 550px;
+                height: 100px;
+            }
             /* end comments section */
 
-            /* Media responsive designs */
-            @media (max-width: 1199px) {
-
-            }
-            @media (max-width: 991px) {
-                
-            }
-            @media (max-width: 767px) {
-                
-            }
 
         </style>
 
@@ -161,11 +177,11 @@
                 <li><a href=""> About Me</a></li>
                 <li><a href=""> Recipes</a>
                     <ul id="sub-menu">
-                        <li><a href=""> Breakfast</a></li>
-                        <li><a href=""> Lunch</a></li>
-                        <li><a href=""> Dinner</a></li>
-                        <li><a href=""> Snack</a></li>
-                        <li><a href=""> Dessert</a></li>
+                        <li><a href="breakfast.html"> Breakfast</a></li>
+                        <li><a href="lunch.html"> Lunch</a></li>
+                        <li><a href="dinner.html"> Dinner</a></li>
+                        <li><a href="snacks.html"> Snack</a></li>
+                        <li><a href="dessert.html"> Dessert</a></li>
                     </ul>
                 </li>    
             </ul>
@@ -174,15 +190,15 @@
         <div class="wrap">
             <h2>About The Page</h2>
             <img id="airfryer" src="img/airfryer.jpg" alt="airfryer">
-            <p>Welcome to our culinary haven! This page is tailored for those equipped with a microwave, air fryer, or oven! Our webpage is designed to cater to your culinary adventures, offering a delightful array of recipes that are not only easy to make but also prioritize your well-being. </p>
-            <p>Whether you're a busy professional or someone with a penchant for simplicity in the kitchen, our collection embraces the convenience of these appliances while ensuring that every dish is a delectable journey into healthier eating. Join us in transforming your meals into quick, fuss-free, and nourishing delights. Embrace the joy of cooking without compromising on health with our microwave, air fryer, and oven-friendly recipes.</p>
+            <p>Welcome to the culinary haven! This page is tailored for those equipped with a microwave, air fryer, or oven! Here you can find meals designed to cater to your culinary adventures, offering a delightful array of recipes that are not only easy to make but also prioritize your well-being. </p>
+            <p>Whether you're a busy professional or someone looking for simplicity in the kitchen, this collection embraces the convenience of these appliances while ensuring that every dish is a delectable journey into healthier eating. Get ready to find some quick, fuss-free, and nourishing delights. Embrace the joy of cooking without compromising on health with these microwave, air fryer, and oven-friendly recipes.</p>
         </div>
 
         <div class="wrap">
             <hr>
             <h2>Recipe of the Day</h2>
             <h3><u>Air Fryer Chicken Breast Meal Recipe</u></h3>
-            <video controls loop autoplay loop>
+            <video controls autoplay loop>
                 <source src="media/chickprep.mp4">
             </video>
             <p><u>Ingredients</u></p>
@@ -210,14 +226,40 @@
         <hr>
         <!-- Questions and Inquiries -->
         <h2>Questions and Inquiries</h2>
-        <form>
-            <div class="form-row">
+        <form action="confirmation.html">
+            <div class="form-sub">
+                <div class="left-col">
+                    Which Section Would You Like More Recipes?
+                </div>
+                    <label>
+                        <input type="checkbox">
+                        Breakfast
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Lunch
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Dinner
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Snack
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Dessert
+                    </label>
+                
+            </div>
+            <div class="form-sub">
                 <div class="left-coli">
                     <label for="msg-id">Give a detailed description of what you would like to ask:</label>
                 </div>
                 <textarea id="msg-id" placeholder="Write out any questions or comments here"></textarea>
             </div>
-            <div class="form-row">
+            <div class="form-sub">
                 <button type="submit">Send</button>
                 <button type="reset">Clear</button> 
                 <!-- fix the clear button -->
