@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <title>Puzzle Image</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+        }
+        #header {
+                font-size: 1.5em;
+                height: 300px;
+                line-height: 300px;
+                text-align: center;
+        }
+        #main{
+			width: 930px;
+            height:auto;
+			margin-left: auto;
+			margin-right: auto;
+            background-color: rgb(0, 252, 210);
+            padding: 15px;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+         /* .img-container {
+            width: 300px;
+            height: auto;
+            flex-wrap: wrap;
+            display:flex;
+        }  */
+        #top{
+            display: flex;
+
+        }
+        #middle{
+            display: flex;        
+        }
+        #bottom {
+            display: flex;         
+        }
+        #mid-bot {
+            position: relative;
+            left: 0px;
+        }
+
+        #bot-right {
+            position: absolute;
+            left: 630px;
+            top: 700px;
+            /* box-shadow: 10px 10px 8px #000; */
+        }
+        #up-mid {
+            position: relative;
+            left:300px;
+        }
+        #up-left {
+            position: absolute;
+            left: 20px;
+            top: 300px;
+            /* box-shadow: 10px 10px 8px #000; */
+        }
+        #up-right {
+            position: absolute;
+            left: 600px;
+            /* box-shadow: 10px 10px 8px #000; */
+        }
+        .draggable {
+            width: 300px;
+            height: auto;
+            flex-wrap: wrap;
+            display:flex;
+            cursor: move;
+        }
+        .draggable #up-mid #mid-bot{
+            cursor: move;
+        }
+
+    </style>
+    <body>
+        <div id="header">
+            <h1>Demon Slayer Puzzle</h1>
+        </div>
+        <!-- header -->
+        <!-- <div class="draggable"> -->
+            <div id="main">    
+                <div id="top">
+                        <div id="up-left">
+                            <img class="draggable" src="img/row-1-column-1.jpg" alt="up-left">
+                        </div>
+                        <div id="up-mid">
+                            <img class="draggable" src="img/row-1-column-2.jpg" alt="up-center">
+                        </div>
+                        <div id="up-right"> 
+                            <img class="draggable" src="img/row-1-column-3.jpg" alt="up-right">
+                        </div>
+                </div>
+                <div id="middle">                   
+                        <img class="draggable" src="img/row-2-column-1.jpg" alt="center-left">
+                        <img class="draggable" src="img/row-2-column-2.jpg" alt="center">
+                        <img class="draggable" src="img/row-2-column-3.jpg" alt="center-right">
+                </div> 
+                <div id="bottom">
+                        <img class="draggable"  src="img/row-3-column-1.jpg" alt="bottom-left">
+                        <div id="mid-bot">
+                            <img class="draggable" src="img/row-3-column-2.jpg" alt="bottom-center">
+                        </div>
+                        <div id="bot-right">
+                            <img class="draggable" src="img/row-3-column-3.jpg" alt="bottom-right">
+                        </div>
+                </div>
+            </div>
+        <!-- </div>     -->
+        <script src="draggabilly/draggabilly.pkgd.min.js"></script>
+        <script>
+            var elem = document.querySelector('.draggable');
+            var draggie = new Draggabilly( elem, {
+            // options...
+            });
+
+            // or pass in selector string as first argument
+            var draggie = new Draggabilly( '.draggable', {
+            // options...
+            });
+
+            // if you have multiple .draggable elements
+            // get all draggie elements
+            var draggableElems = document.querySelectorAll('.draggable');
+            // array of Draggabillies
+            var draggies = []
+            // init Draggabillies
+            for ( var i=0; i < draggableElems.length; i++ ) {
+            var draggableElem = draggableElems[i];
+            var draggie = new Draggabilly( draggableElem, {
+                // options...
+            });
+            draggies.push( draggie );
+            }
+        </script>
+        
+    </body>
+</html>
