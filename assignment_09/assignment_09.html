@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shane's Cooking Corner</title>
+        
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Shane's Cooking Page is designed to give the tools for easy and healthy meals for people on the go or college students just like myself. Perfect for kitchen enthusiasts or if you're trying to make a quick snack.">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&family=Dancing+Script&family=Playpen+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+        <style>
+            
+
+            body{
+                width: 1000px;
+                background-color: rgb(255, 95, 95);
+                text-align: left;
+                padding: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                color: #5b4b57;
+
+            }
+            p li {
+                font-family: "PlaypenSans", sans-serif;
+            }
+            /* Header */
+/* Homepage Content */
+            #airfryer {
+                float: right;
+                height: 200px;
+                max-width: 100%;
+                margin-top: 0px;
+
+            }
+            #marinated {
+                float: right;
+                height: 200px;
+                max-width: 100%;
+                margin-top: 0px;
+
+            }
+            #rotd {
+                height: 250px;
+                max-width: 100%;
+                float: right;
+                padding: 0px 30px 5px 5px;
+            }
+
+            #chickenb {
+                padding: 0px 30px 5px 5px;
+                
+            }
+            video {
+                max-width: 100%;
+                height: 200px;
+                float: right;
+                display: flex;
+                margin-right: 150px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="header">
+            <h1>Shane's Cooking Corner</h1>
+        </div> 
+           <!-- header -->
+
+        <div id="navbar">
+            <ul id="menu-bar">
+                <li><a href="assignment_09.html"> Home</a></li>
+                <li><a href="about.html"> About Me</a></li>
+                <li><a href=""> Recipes</a>
+                    <ul id="sub-menu">
+                        <li><a href="breakfast.html"> Breakfast</a></li>
+                        <li><a href="lunch.html"> Lunch</a></li>
+                        <li><a href="dinner.html"> Dinner</a></li>
+                        <li><a href="snacks.html"> Snack</a></li>
+                        <li><a href="dessert.html"> Dessert</a></li>
+                    </ul>
+                </li>    
+            </ul>
+        </div>
+        <!-- navbar -->
+        <div class="wrap">
+            <h2>About The Page</h2>
+            <img id="airfryer" src="img/airfryer.jpg" alt="airfryer">
+            <p>Welcome to the culinary haven! This page is tailored for those equipped with a microwave, air fryer, or oven! Here you can find meals designed to cater to your culinary adventures, offering a delightful array of recipes that are not only easy to make but also prioritize your well-being. </p>
+            <p>Whether you're a busy professional or someone looking for simplicity in the kitchen, this collection embraces the convenience of these appliances while ensuring that every dish is a delectable journey into healthier eating. Get ready to find some quick, fuss-free, and nourishing delights. Embrace the joy of cooking without compromising on health with these microwave, air fryer, and oven-friendly recipes.</p>
+        </div>
+
+        <div class="wrap">
+            <hr>
+            <h2>Recipe of the Day</h2>
+            <h3><u>Air Fryer Chicken Breast Meal Recipe</u></h3>
+            <!-- <img id="marinated" src="img/marinade.jpg" alt="marinade"> -->
+            <video controls autoplay loop>
+                <source src="media/chickprep.mp4">
+            </video>
+            <p><u>Ingredients</u></p>
+            <ul id="chickenb">
+                <li>Chicken Breast</li>
+                <li>Olive Oil</li>
+                <li>Lemon/Lemon Juice</li>
+                <li>Italian Seasoning</li>
+                <li>Garlic</li>
+                <li>Scallions</li>
+                <li>Paprika</li>
+                <li>Salt and Pepper</li>
+                <li>Optional: Cauliflower Rice & Brussel Sprouts</li>
+            </ul>
+            </div>
+            <div class="wrap">
+                <p><u>Instructions</u></p>
+                <ol>
+                    <li><strong>Prepare:</strong>Place chicken in zip lock bag and add small amount of oil, spices, and then gently rub after sealing bag.</li>
+                    <li><strong>Air Fry:</strong>Place marinated chicken and brussel sprouts in Airfryer and bake at 400 degrees for 7 minutes. (flip at 3:30)</li>
+                    <li><strong>Microwave:</strong>Keep cauliflower rice in the bag and place into the microwave until directed. (Kirkland Cauliflower Rice is 6-7 minutes)</li>
+                </ol>
+            </div>
+        
+        <hr>
+        <!-- Questions and Inquiries -->
+        <h2>Questions and Inquiries</h2>
+        <form action="confirmation.html">
+            <div class="form-sub">
+                <div class="left-col">
+                    Which Section Would You Like More Recipes?
+                </div>
+                    <label>
+                        <input type="checkbox">
+                        Breakfast
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Lunch
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Dinner
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Snack
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Dessert
+                    </label>
+                
+            </div>
+            <div class="form-sub">
+                <div class="left-coli">
+                    <label for="msg-id">Give a detailed description of what you would like to ask:</label>
+                </div>
+                <textarea id="msg-id" placeholder="Write out any questions or comments here"></textarea>
+            </div>
+            <div class="form-sub">
+                <button type="submit">Send</button>
+                <button type="reset">Clear</button> 
+                <!-- fix the clear button -->
+            </div>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,117 @@
+@font-face {
+    src:url('fonts/PlaypenSans.ttf');
+    font-family:"PlaypenSans";
+    src:url('fonts/Aclonica.ttf');
+    font-family: "Aclonica";
+}
+#header{
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-width: 100%;
+    text-align: center;
+    line-height: 300px;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: 5px 5px 10px #7e7e7e;
+    background-image: url(img/title.jpg);
+    background-size: cover;
+    font-family: "Courgette", fantasy;
+    font-size: 1.8em;
+}
+body{
+    width: 1000px;
+    background-color: rgb(255, 95, 95);
+    text-align: left;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5b4b57;
+}
+            /* Start navbar */
+            #navbar a{
+                text-decoration: none;
+                width: 333px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                display: block;
+                color: #5b4b57;
+                border-bottom: 2px solid rgb(255, 95, 95);
+            }
+            #navbar {
+                background-color: rgb(241, 231, 118);
+                top:300px;
+                left: 0px;
+                right: 0px;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                box-shadow: 0px 3px 5px #000;
+            }
+            #navbar ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            #navbar li {
+                text-align: center;
+                position: relative;
+            }
+            #navbar li:hover {
+                background-color: rgb(255, 95, 95);
+            }
+            #menu-bar {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                box-shadow: 0px 3px 5px #000;
+            }
+            #menu-bar ul{
+                position: absolute;
+                display: none;
+            }
+            #navbar li:hover > ul {
+                display: block;
+            }
+            #navbar a:hover, #navbar #highlight-nav {
+                color: rgb(255, 95, 95);
+                border-bottom: 1px solid rgb(255, 95, 95);
+                color: #5b4b57;
+            }
+            #sub-menu {
+                top: 50px;
+                border: 1px solid rgb(241, 231, 118);
+                background-color: rgb(241, 231, 118);
+                color: #5b4b57;
+            }
+            .wrap {
+                margin-bottom: 30px;
+                padding: 10px;
+            }
+/* navbar */
+hr {
+    margin-top: auto;
+    height: 2px;
+    background-color: yellow;
+}
+h2{
+    font-family: "PlaypenSans", sans-serif;
+}
+h3{
+    font-family: "Aclonica", fantasy;
+}
+/* comments */
+.form-sub {
+    display: flex;
+    margin: 20px 5px;
+
+}
+.left-col {
+    width: 400px;
+}
+textarea {
+    width: 550px;
+    height: 100px;
+    background-color: rgb(241, 231, 118);
+}
