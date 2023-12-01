@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>About Me</title>
+
+        <link rel="stylesheet" href="main.css">
+        <meta name="description" content="This page is designed to give a little background about myself and my experience as a cook. I want to introduce the page and show that the main goal is to encourage people to try cooking in the kitchen more and diversify the types of food they can make at any point in the day.">
+        <link rel="stylesheet" href="path/to/halkaBox.min.css">
+        <style>
+            #me {
+                float: left;
+                height: 300px;
+                max-width: 100%;
+                margin-top: 0px;
+                margin-right: 20px;
+            }
+            #fam {
+                float: right;
+                height: 300px;
+                max-width: 100%;
+                margin-left: 10px;
+            }
+            p {
+                margin: 30px;
+            }
+            h1{
+                line-height: 150px;
+            }
+            h4{
+                line-height: 0em;
+            }
+            .gallery1 img {
+                height: 200px;
+                max-width: 100%;
+            }
+
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Shane's Cooking Corner</h1>
+            <h4> About Me</h4>
+        </div> 
+           <!-- header -->
+           <div id="navbar">
+                <ul id="menu-bar">
+                    <li><a href="final_project.html"> Home</a></li>
+                    <li><a href="about.html"> About Me</a></li>
+                    <li><a href=""> Recipes</a>
+                        <ul id="sub-menu">
+                            <li><a href="breakfast.html"> Breakfast</a></li>
+                            <li><a href="lunch.html"> Lunch</a></li>
+                            <li><a href="dinner.html"> Dinner</a></li>
+                            <li><a href="snacks.html"> Snack</a></li>
+                            <li><a href="dessert.html"> Dessert</a></li>
+                        </ul>
+                    </li>    
+                </ul>
+            </div>
+
+        <!-- navbar -->
+
+        <div class="wrap">
+
+            <h2 id="about">About The Cook</h2>
+            <a href="img/me.jpg" class="gallery1"><img src="img/me.jpg"></a>
+            <a href="img/family.jpg" class="gallery1"><img src="img/family.jpg"></a>
+            <a href="img/group.jpg" class="gallery1"><img src="img/group.jpg"></a>
+
+            <p>Hello and thank you for coming to this page! I am currently a student at USC pursuing my finance degree at the Marshall School of Business in Los Angeles. My schedule as a college student is always busy so I have to manage my time to also have time for the things I enjoy, one of which is cooking. </p>
+            <p>I love to cook, but like all college students, I rarely have the time to make a gourmet meal from scratch. However, recently, new inventions, like the air fryer, have made this possible again. I love to incorporate the air fryer into my cooking routine to not only speed up cooking time but also as a healthier alternative to cut unnecessary calories. Additionally, the air fryer has opened up a new door in the number of recipes I was not capable of making properly before, which is great because I miss my parent’s home-cooked meals, which are my inspiration for this page.</p>
+            <hr>
+            <h2>My Inspiration</h2>
+            <p>I grew up in the heart of Minnesota and always had meals inspired by cultures from every corner of the globe. My parents always ensured that we could experience other parts of the world in the comforts of home. That is why I have created this page. I want to continue opening myself up to making delicious meals that are great for watching my caloric intake and also not limiting myself to just a chicken and rice combination that I stuck to for so many years because it was quick, easy, and full of protein which every weightlifter loves to hear. </p>
+            <hr>
+            <h2>The Goal</h2>
+            <p>I hope that you too will find your own touch in the kitchen and create art that not only satisfies your appetite but also inspires a newfound love for cooking. This page aims to present a myriad of recipes that cater to various tastes and preferences. Whether you're a seasoned chef or a kitchen novice, the goal is to provide a platform where everyone can explore, experiment, and ultimately savor the joy of preparing delectable dishes. </p>
+            <hr>
+        </div>
+        <h2>Connect With Us!</h2>
+        <div id="connect">
+            <div class="connect-cont">
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="img/linkedin.jpg" alt="linkedin"></a>
+            </div>
+            <div class="connect-cont">
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/ig.png" alt="IG"></a>
+            </div>
+            <div class="connect-cont">
+                <a href="https://twitter.com/" target="_blank"><img src="img/xlogo.jpg" alt="x"></a>
+            </div>
+            <div class="connect-cont">
+                <a href="mailto:shanemil@usc.edu" target="_blank"><img src="img/gmail.jpg" alt="gmail"></a>
+            </div>
+
+            <script src="path/to/halkaBox.min.js"></script>
+            <script>
+ halkaBox.options({
+    hideButtons: true,       // hide buttons on touch devices (true || false)
+    animation: "fade",      // animation type on next/prev ("slide" || "fade")
+    theme: "light",          // lightbox overlay theme ("light" || "dark")
+    preload: 2,              // number of images to preload
+    swipeDownToClose: true, // swipe down to close (true || false)
+    swipeUpToClose: true,   // swipe up to close (true || false)
+    nextPrevOnWheel: true,   // goto next/prev image on wheel (true || false)
+    isZoomable: true         // ability to zoom image (true || false)
+});
+halkaBox.run("...", {
+    hideButtons: false,       // hide buttons on touch devices (true || false)
+    animation: "slide",      // animation type on next/prev ("slide" || "fade")
+    theme: "light",          // lightbox overlay theme ("light" || "dark")
+    preload: 2,              // number of images to preload
+    swipeDownToClose: true, // swipe down to close (true || false)
+    swipeUpToClose: true,   // swipe up to close (true || false)
+    nextPrevOnWheel: true,   // goto next/prev image on wheel (true || false)
+    isZoomable: true         // ability to zoom image (true || false)
+});
+            </script>
+    </body>
+</html>
