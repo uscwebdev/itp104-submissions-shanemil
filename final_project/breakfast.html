@@ -12,6 +12,79 @@
             h4{
                 line-height: 0em;
             }
+
+            #cinnamon{
+                height: 500px;
+                width:500px;
+            }
+            #img-animation{
+                justify-content:center;
+            }
+            #img-animation .overlay {
+			transition: all 1s;
+			transform: scale(2);
+			opacity: 0;
+		}
+        #img-animation img {
+			display: block;
+			width: 100%;
+		}
+        #img-animation .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+			color: #FFF;
+			font-size: 2em;
+			text-align: center;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+		}
+        #img-animation .container {
+			max-width: 600px;
+			position: relative;
+			overflow: hidden;
+		}
+        #img-animation p {
+			text-decoration: none;
+			display: block;
+			background-color: rgb(255, 95, 95);
+			color: rgb(241, 231, 118);
+			width: 300px;
+			text-align: left;
+			position: absolute;
+			bottom: 70px;
+			left: 0px;
+			right: 0px;
+			margin-left: auto;
+			margin-right: auto;
+            padding: 5px;
+		}
+
+		#img-animation .container:hover .overlay {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		#img-animation p u{
+			transition: all 1s ease 0s;
+			opacity: 0;
+		}
+
+		#img-animation .container:hover p u{
+			opacity: 1;
+			transition: all 1s ease 1s;
+		}
+        #img-animation p {
+			transition: all 1s ease 0s;
+			opacity: 0;
+		}
+
+		#img-animation .container:hover p {
+			opacity: 1;
+			transition: all 1s ease 1s;
+		}
+        
         </style>
     </head>
     <body>
@@ -132,11 +205,19 @@
                     <li><strong>Final Touches:</strong> Serve with butter and maple syrup or honey, or sprinkle the pieces with granulated sugar and garnish with fresh berries.</li>
                 </ol>
             </div>
+            <hr>
 
+            <div id="img-animation">
+                <h3 id="secret"><u>Secret Treat</u></h3>
+                
+                <div class="container">
+                    <img id="cinnamon" src="img/cinnamon.jpg" alt="cinnamon_roll">
+                    <div class="overlay">Hidden Recipe</div>
+                    <p><u>Ingredients:1 Can of Pillsbury Cinnamon Rolls 8-Count & Coconut Oil Cooking Spray </u>
+                    Remove from package, place into air fryer and bake for 8 minutes at 360 degrees, carefully remove and add icing.</p>
+                </div>
+            </div>
 
-        <!-- include jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <!-- include Cycle2 -->
-        <script src="http://path/to/your/copy/of/jquery.cycle2.min.js"></script>
+            
     </body>
 </html>
