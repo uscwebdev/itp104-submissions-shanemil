@@ -6,7 +6,6 @@
 
         <link rel="stylesheet" href="main.css">
         <meta name="description" content="This page is designed to give a little background about myself and my experience as a cook. I want to introduce the page and show that the main goal is to encourage people to try cooking in the kitchen more and diversify the types of food they can make at any point in the day.">
-        <link rel="stylesheet" href="path/to/halkaBox.min.css">
         <style>
             #me {
                 float: left;
@@ -30,10 +29,42 @@
             h4{
                 line-height: 0em;
             }
-            .gallery1 img {
+            img{
                 height: 200px;
-                max-width: 100%;
+                width:auto;
             }
+
+            #thumbnail{
+                display: flex;
+                justify-content: center;
+            }
+            .img-container {
+			background-color: #CCC;
+			margin: 10px;
+			width: auto;
+			height: 200px;
+			overflow: hidden;
+			position: relative;
+		}
+            .overlay{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: #000;
+                color: rgb(255, 95, 95);
+                text-align: center;
+                padding-top: 100px;
+                visibility: hidden;
+                opacity:0.7;
+            }
+            .img-container:hover > .overlay {
+			visibility: visible;
+		}
+		    .img-container > img {
+			height: 100%;
+			width: auto;}
 
 
             
@@ -66,12 +97,36 @@
         <div class="wrap">
 
             <h2 id="about">About The Cook</h2>
-            <a href="img/me.jpg" class="gallery1"><img src="img/me.jpg"></a>
-            <a href="img/family.jpg" class="gallery1"><img src="img/family.jpg"></a>
-            <a href="img/group.jpg" class="gallery1"><img src="img/group.jpg"></a>
-
             <p>Hello and thank you for coming to this page! I am currently a student at USC pursuing my finance degree at the Marshall School of Business in Los Angeles. My schedule as a college student is always busy so I have to manage my time to also have time for the things I enjoy, one of which is cooking. </p>
             <p>I love to cook, but like all college students, I rarely have the time to make a gourmet meal from scratch. However, recently, new inventions, like the air fryer, have made this possible again. I love to incorporate the air fryer into my cooking routine to not only speed up cooking time but also as a healthier alternative to cut unnecessary calories. Additionally, the air fryer has opened up a new door in the number of recipes I was not capable of making properly before, which is great because I miss my parent’s home-cooked meals, which are my inspiration for this page.</p>
+            <hr>
+            <h2 id="about">Places I've Been</h2>
+            <div id="thumbnail">
+                <div class="img-container">
+                    <img src="img/me.jpg" alt="me"></a>
+                    <div class="overlay">Finland</div>
+                </div>
+                <div class="img-container">
+                    <img src="img/family.jpg" alt="family"></a>
+                    <div class="overlay">Universal Hollywood</div>
+                </div>
+                <div class="img-container">
+                    <img src="img/bee.jpg" alt="bee"></a>
+                    <div class="overlay">Venice Canal</div>
+                </div>
+                <div class="img-container">
+                    <img src="img/rome.jpg" alt="rome"></a>
+                    <div class="overlay">Rome</div>
+                </div>
+                <div class="img-container">
+                    <img src="img/group.jpg" alt="group"></a>
+                    <div class="overlay">Florence</div>
+                </div>
+                <div class="img-container">
+                    <img src="img/ice.jpg" alt="ice"></a>
+                    <div class="overlay">Swiss Alps</div>
+                </div>
+            </div>
             <hr>
             <h2>My Inspiration</h2>
             <p>I grew up in the heart of Minnesota and always had meals inspired by cultures from every corner of the globe. My parents always ensured that we could experience other parts of the world in the comforts of home. That is why I have created this page. I want to continue opening myself up to making delicious meals that are great for watching my caloric intake and also not limiting myself to just a chicken and rice combination that I stuck to for so many years because it was quick, easy, and full of protein which every weightlifter loves to hear. </p>
@@ -79,6 +134,7 @@
             <h2>The Goal</h2>
             <p>I hope that you too will find your own touch in the kitchen and create art that not only satisfies your appetite but also inspires a newfound love for cooking. This page aims to present a myriad of recipes that cater to various tastes and preferences. Whether you're a seasoned chef or a kitchen novice, the goal is to provide a platform where everyone can explore, experiment, and ultimately savor the joy of preparing delectable dishes. </p>
             <hr>
+            
         </div>
         <h2>Connect With Us!</h2>
         <div id="connect">
@@ -94,29 +150,6 @@
             <div class="connect-cont">
                 <a href="mailto:shanemil@usc.edu" target="_blank"><img src="img/gmail.jpg" alt="gmail"></a>
             </div>
-
-            <script src="path/to/halkaBox.min.js"></script>
-            <script>
- halkaBox.options({
-    hideButtons: true,       // hide buttons on touch devices (true || false)
-    animation: "fade",      // animation type on next/prev ("slide" || "fade")
-    theme: "light",          // lightbox overlay theme ("light" || "dark")
-    preload: 2,              // number of images to preload
-    swipeDownToClose: true, // swipe down to close (true || false)
-    swipeUpToClose: true,   // swipe up to close (true || false)
-    nextPrevOnWheel: true,   // goto next/prev image on wheel (true || false)
-    isZoomable: true         // ability to zoom image (true || false)
-});
-halkaBox.run("...", {
-    hideButtons: false,       // hide buttons on touch devices (true || false)
-    animation: "slide",      // animation type on next/prev ("slide" || "fade")
-    theme: "light",          // lightbox overlay theme ("light" || "dark")
-    preload: 2,              // number of images to preload
-    swipeDownToClose: true, // swipe down to close (true || false)
-    swipeUpToClose: true,   // swipe up to close (true || false)
-    nextPrevOnWheel: true,   // goto next/prev image on wheel (true || false)
-    isZoomable: true         // ability to zoom image (true || false)
-});
-            </script>
+    
     </body>
 </html>
